@@ -9,12 +9,12 @@ function map(obj, cb) {
 
   function reduce(obj, cb, accumulator) {
     const keys = Object.keys(obj)
-    let i = 0
+    let i = 1
 
     if (accumulator) {
-      i = 1
+      i = 0
     } else {
-      accumulator = obj[keys[1]]
+      accumulator = obj[keys[0]]
     }
 
     for (i; i < keys.length; i++) {
